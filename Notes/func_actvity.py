@@ -2,7 +2,7 @@
 # Class Activity - Function
 
 #Task 1 - Function Determine Discounts
-def deter_discount(ticket_price, adults, seniors, children, students):
+def deter_discount(ticket_price, adults, seniors, students, children):
     total = 0
     if(adults > 0):
          total += ticket_price * adults
@@ -15,9 +15,8 @@ def deter_discount(ticket_price, adults, seniors, children, students):
         total += (ticket_price * .50) * children
     elif(students > 0):
         print(students, ticket_price)
-        total += (ticket_price * .9) * students
+        total = ticket_price * .9 * students
     print(total)
-
 
 deter_discount(20, 0, 0, 0, 3)
 

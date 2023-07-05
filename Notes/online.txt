@@ -1,5 +1,5 @@
-# Online Orders - Nested (if statements) & Functions
-# Yvonne Aime, COP2500, July 5 2023
+Online Orders - Nested (if statements) & Functions
+Yvonne Aime, COP2500, July 5 2023
 
 
 # Function - allows us to use reusable pieces code
