@@ -20,8 +20,11 @@ options = int(input("Where would you like to go?\n"))
     # Roti Canai - $9.00
 # What would you you like to buy?
 
-    
-# 3. Black Bean Deli
-    #
-    #
+
+# You chose option 3 (Black Bean Deli)
+# They sell the following food items:
+    # Dark Chicken Platter - $14.60 
+    # Yuca Fries - $7.85
+# What would you you like to buy?
+
 
