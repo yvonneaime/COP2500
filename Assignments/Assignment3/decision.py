@@ -21,7 +21,7 @@ print(options)
     #you need to try again
 
 # Option 1 - Hot Dog Heaven 
-option1 = ("You chose option 1 (Hot Dog Heaven)\n They sell the following food items:\n")
+option1 = ("You chose option 1 (Hot Dog Heaven) \nThey sell the following food items:\n")
 opt1_items = ("\t1. Chicago Hot Dog - $4.50\n \t2. Fries - $2.75\n")
 prompt1 = int(input(option1 + opt1_items + "What would you you like to buy?\n"))
 
