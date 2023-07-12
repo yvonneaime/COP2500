@@ -37,29 +37,33 @@ prompt3 = option3 + opt3_items + "What would you you like to buy?\n"
 
 # How many of each food item you want?
 food_count = int(input("How many would you like to buy?\n"))
-total = budget + 1
-if(options == 1):
-    print(prompt1)
-elif(prompt1 == 1 and prompt1 == 2):
-    print("How many would you like to buy?\n")
-if(prompt1 == 1):
-   summary = 4.50 * food_count
-   summary = f"That would cost ${summary}"
-   print(summary)
-elif(prompt1 == 2):
-    summary =  2.75 * food_count
-    print(summary)
+loop_check = False  
+
+while(loop_check == False):
+
+    if(options == 1):
+        print(prompt1)
+    elif(prompt1 == 1 and prompt1 == 2):
+        print(food_count)
+    if(prompt1 == 1):
+        summary = 4.50 * food_count
+        summary = f"That would cost ${summary}"
+        print(summary)
+    elif(prompt1 == 2):
+        summary =  2.75 * food_count
+        print(summary)
+        
 
 
 
 
-# elif(options == 2):
-    # print(prompt2)
-# elif(options == 3):
-   #  print(prompt3)
-#while(budget > total )
+    # elif(options == 2):
+        # print(prompt2)
+    # elif(options == 3):
+    #  print(prompt3)
+    #while(budget > total )
 
-# Food items 
+    # Food items 
 
 
 
