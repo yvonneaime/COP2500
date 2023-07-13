@@ -4,10 +4,12 @@
 
 # Assignment 3 - Food Decisions
 
-budget = float(input("How much money do we have to spend?\n"))
+
+# Budget - as a float (input())
+budget = float(input("How much money do we have to spend?\n\n"))
+# States Restaurant Options
 options = int(input("Where would you like to go?\n" 
                     "1. Hot Dog Heaven\n" "2. Hawkers\n" "3. Black Bean Deli\n"))
-
 total = budget + 1
 
 while(budget < total):
@@ -48,7 +50,8 @@ while(budget < total):
         if (what_choice == 2):
             total = 7.85 * food_count
         print("\nThat would cost $%.2f"%total)
-    #
+
+    # Print final statements: (Either you got it or you don't)
     if(budget > total):
         print("You have enough!\n✩ Enjoy! ✩ ")
     else:
