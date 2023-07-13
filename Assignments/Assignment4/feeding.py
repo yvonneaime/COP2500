@@ -1,5 +1,8 @@
-# Assignment 4
+# Yvonne Aime
+# COP2500
+# July 12 2023
 
+# Assignment 4 - Feeding Roommates
 
 # Calculate # of calories 
 def grams_to_cal(grams):

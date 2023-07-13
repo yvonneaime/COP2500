@@ -15,15 +15,15 @@
 
 
 # FUNCTION NOTES:
-# Must define the functione before you use it
-# You can pass in values, separated by a comma
-# You can only return 1 value.
-# Variables and Parameters inside of the function 
-# do NOT hold value outside of the function
+    # Must define the function before you use it
+    # You can pass in values, separated by a comma
+    # You can only return 1 value.
+    # Variables and Parameters inside of the function 
+    # do NOT hold value outside of the function
 
 # When 'return' is called the function is ended 
 # EX: 
-#def(g(a,b)):
-   # if (a > b):
-    #    return a - b
-   # return b - a
+    #def(g(a,b)):
+    # if (a > b):
+        # return a - b
+    # return b - a
