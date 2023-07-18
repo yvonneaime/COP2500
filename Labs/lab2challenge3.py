@@ -22,7 +22,6 @@ def table_game(lucky_number):
 
     while(num != lucky_number):
         num = int(input("What's your number?\n"))
-
     return "You got it!!"
 
 print("sports_dinner(people):", sports_dinner(3))
