@@ -8,12 +8,12 @@ import random
 
 # Calculate grams to calories 
 def grams_to_cal(grams):
-    # 30% (protein) of grams * 4cal = 1.2 cal
-    # 20% (vegetables) of grams * 1cal = 0.2 cal
-    # 50% (carbohydrates) of grams * 4cal = 2 cal
-    # Average balanced meal there 3.4 calories in a gram
+    # (Protein) 30% of grams * 4cal = 1.2 cal
+    # (Vegetables) 20% of grams * 1cal = 0.2 cal
+    # (Carbohydrates) 50% of grams * 4cal = 2 cal
+    #  Average balanced meal (1.2 + 0.2 + 2) = 3.4 calories in a gram
     return grams * 3.4 
-
+# Roommate 1 Funtion
 def roommate_1():
     # Random meal number generated to decide how many meals for that day (2-7 meals)
     meal_num =  random.randint(2, 7)
@@ -23,32 +23,33 @@ def roommate_1():
     # Initialize meals
     meals = 0
     for i in range(meal_num):
-       grams_per_meal = float(input("How many grams was meal #"+ str(i+1)+ "?\n"))
+       grams_per_meal = int(input("How many grams was meal #"+ str(i+1)+ "?\n"))
        meals += grams_per_meal 
     # Calulates average Calories 
     meals = meals * 3.4
-    return meals
+    return int(meals)
     
-
+# Roommate 2 Funtion
 def roommate_2():
     # Header for Roomate #2
-    print("Roomate #2")
+    print("Roommate #2")
     # Integer Input - grams in large  meal
-    large_grams = float(input("How many grams was your large meal?\n"))
+    large_grams = int(input("How many grams was your large meal?\n"))
     # Grams converted to calories 
     large_grams = large_grams * 3.4
-    return large_grams
+    return int(large_grams)
 
+# Roommate 3 Funtion
 def roommate_3():
     # Header for Roomate #3
-    print("Roomate #3\n")
+    print("Roommate #3\n")
     # Initialize Total
     total = 0
     for i in range(3):
         # Asks main food group options
         meal_options = int(input("What are you eating for meal #"+ str(i+1)+ 
                                  "?\n1 - Protein \n2 - Veggie \n3 - Carb\n"))
-        food_intake = float(input("\nHow much did you eat?\n"))
+        food_intake = int(input("\nHow much did you eat?\n"))
         if(meal_options == 1 or meal_options == 3 ):
             calorie = 4 
         elif(meal_options == 2):
@@ -56,16 +57,14 @@ def roommate_3():
         total += calorie * food_intake
     return total
         
-        
-
-# Results - if roomates' calorie counts have been met
+# Main function
 def main():
-    #Header for program
+    # Welcome Message
     print("Welcome!\n")
     room1_cal = roommate_1()
     room2_cal = roommate_2()
     room3_cal = roommate_3()
-    print("Results:\n")
+    print("\n✮ Final Results:\n")
 # Roomate 1 - Calorie Intake 
     if(room1_cal >= 2500):
         print("Roomate #1: Total: %s" %room1_cal, "2500? Yes ✩")
@@ -80,5 +79,5 @@ def main():
     if(room2_cal >= 2500):
         print("Roomate #3: Total: %s" %room3_cal, "2500? Yes ✩")
     else: 
-        print("Roomate #3: Total: %s" %room3_cal, "2500? No")
+        print("Roomate #3: Total: %s" %room3_cal, "2500? No ")
 main()
