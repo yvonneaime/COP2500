@@ -60,11 +60,11 @@ def roommate_3():
 # Main function
 def main():
     # Welcome Message
-    print("Welcome!\n")
+    print("\n ⟡˙⋆ Welcome! ⟡˙⋆ \n")
     room1_cal = roommate_1()
     room2_cal = roommate_2()
     room3_cal = roommate_3()
-    print("\n✮ Final Results:\n")
+    print("\n✮˙⋆ Final Results ✮˙⋆\n")
 # Roomate 1 - Calorie Intake 
     if(room1_cal >= 2500):
         print("Roomate #1: Total: %s" %room1_cal, "2500? Yes ✩")
