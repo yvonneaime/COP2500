@@ -6,10 +6,7 @@
 
 import random 
 
-#Header for program
-print("Welcome!")
-
-# Calculate # of calories 
+# Calculate grams to calories 
 def grams_to_cal(grams):
     # 30% (protein) of grams * 4cal = 1.2 cal
     # 20% (vegetables) of grams * 1cal = 0.2 cal
@@ -23,8 +20,8 @@ def roommate_1():
     
     # Header for Roomate #1
     print("Roomate #1\nLooks like you are eating",meal_num,"meals today.")
+    # Initialize meals
     meals = 0
-    
     for i in range(meal_num):
        grams_per_meal = float(input("How many grams was meal #"+ str(i+1)+ "?\n"))
        meals += grams_per_meal 
@@ -45,32 +42,43 @@ def roommate_2():
 def roommate_3():
     # Header for Roomate #3
     print("Roomate #3\n")
-
-    # Lists main food group options
+    # Initialize Total
     total = 0
     for i in range(3):
+        # Asks main food group options
         meal_options = int(input("What are you eating for meal #"+ str(i+1)+ 
                                  "?\n1 - Protein \n2 - Veggie \n3 - Carb\n"))
-        food_intake = float(input("\nHow much did you eat?"))
+        food_intake = float(input("\nHow much did you eat?\n"))
         if(meal_options == 1 or meal_options == 3 ):
             calorie = 4 
         elif(meal_options == 2):
             calorie = 1
-        total = calorie * food_intake
+        total += calorie * food_intake
     return total
         
         
 
-# No code outside of the function
+# Results - if roomates' calorie counts have been met
 def main():
+    #Header for program
+    print("Welcome!\n")
     room1_cal = roommate_1()
-
+    room2_cal = roommate_2()
+    room3_cal = roommate_3()
+    print("Results:\n")
+# Roomate 1 - Calorie Intake 
     if(room1_cal >= 2500):
-        print("Roomate 1 ate",room1_cal )
+        print("Roomate #1: Total: %s" %room1_cal, "2500? Yes ✩")
     else: 
-        print("Didnt eat enuff",room1_cal )
-
-
-print("roommate_1():", roommate_1(), "\n")
-print("roommate_2():", roommate_2(), "\n")
-print("roommate_3():", roommate_3(), "\n")
+        print("Roomate #1: Total: %s" %room1_cal, "2500? No")
+# Roomate 2 - Calorie Intake 
+    if(room2_cal >= 2500):
+        print("Roomate #2: Total: %s" %room2_cal, "2500? Yes ✩")
+    else: 
+        print("Roomate #2: Total: %s" %room2_cal, "2500? No")
+# Roomate 3 - Calorie Intake 
+    if(room2_cal >= 2500):
+        print("Roomate #3: Total: %s" %room3_cal, "2500? Yes ✩")
+    else: 
+        print("Roomate #3: Total: %s" %room3_cal, "2500? No")
+main()
