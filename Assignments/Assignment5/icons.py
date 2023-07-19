@@ -12,6 +12,11 @@
 # Uses color
 # Uses a loop within its drawing.  
 
+import turtle
+
+# Turtle is referenced as 't'
+t = turtle.Turtle()
+
 # Design 1 Function
 def design_1(x,y,size):
     x = 0
