@@ -44,8 +44,7 @@ def colorful_house(x,y, size, color):
     turtle.color("green")
     turtle.fillcolor("blue")
 
-    
-fur 
+
 def main():
     draw_house()
     draw_better_house(-500,0)
