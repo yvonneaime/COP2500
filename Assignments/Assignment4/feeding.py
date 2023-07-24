@@ -8,11 +8,13 @@ import random
 
 # Calculate grams to calories 
 def grams_to_cal(grams):
-    # (Protein) 30% of grams * 4cal = 1.2 cal
-    # (Vegetables) 20% of grams * 1cal = 0.2 cal
-    # (Carbohydrates) 50% of grams * 4cal = 2 cal
+    protein = .3 * 4 
+    vegetables = .2 * 1
+    carbs = .5 * 4
     #  Average balanced meal (1.2 + 0.2 + 2) = 3.4 calories in a gram
-    return grams * 3.4 
+    return protein * vegetables * carbs
+
+
 # Roommate 1 Funtion
 def roommate_1():
     # Random meal number generated to decide how many meals for that day (2-7 meals)
