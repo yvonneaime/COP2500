@@ -12,7 +12,7 @@ def menu_shortener(meal):
     # Checks if it is 2-3 words 
     if(len(wordcheck)== 2 or len(wordcheck)== 3):        
         # Empty list, to append new words/abbreviations
-        wordcheck02=[]
+        wordcheck02 = []
         for i in range(len(wordcheck)):
             new = wordcheck[i]
             #Appends new words 
@@ -39,7 +39,7 @@ def main():
     print("Your Order:\n")
     # Separates list with dash - and numbers the items ordered 
     for i in range(len(item_list)):
-        print(str(i+1)+"."+item_list[i]+"-"+new_list[i])
+        print(str(i+1) + "." + item_list[i] + "-" + new_list[i])
     # Prints out and returns final items
     return new_list
 
