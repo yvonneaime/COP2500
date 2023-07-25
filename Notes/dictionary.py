@@ -26,3 +26,27 @@ students[name] = grade
 students["Kyle"] = 100
 
 print(students)
+
+# Prints Miguel's grade
+if "Miguel" in students:
+    print(students["Miguel"])
+
+
+# How to change value
+students["Miguel"] = students["Miguel"]/ 2 + 3 
+print(students)
+
+# How to remove items from a dictionary
+students.pop("Miguel")
+print(students)
+
+
+
+total = 0
+# Will go through each key in the dictionary and save it as a variable key
+for key in students:
+    print(key, "Value", students[key])
+    total += students[key]
+
+average = total / len(students)
+print(average)
