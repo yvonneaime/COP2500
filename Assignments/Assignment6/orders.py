@@ -36,7 +36,7 @@ def main():
             new_list.append(meal)
             item_list.append(menu_shortener(meal))
     # Header for final order printout
-    print("⋆ Your Order: ⋆\n")
+    print("⋆Your Order: ⋆\n")
     # Separates list with dash - and numbers the items ordered 
     for i in range(len(item_list)):
         print(str(i+1) + "." + item_list[i] + "-" + new_list[i])
