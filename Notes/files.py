@@ -9,7 +9,8 @@ file_out = open("sample.txt","w")
 file_out.write("Hello")
 file_out.write("Did I sing\n")
 
-rain = int[1.5, 2,5 0, 4,1]
+rain = [1.5, 2.5, 0, 4.1]
+
 for day in range(len(rain)):
     file_out.write(str(day+1)+ "-"+str(rain[day]+"inches\n"))
 
