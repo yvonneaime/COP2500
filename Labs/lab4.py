@@ -22,16 +22,20 @@ def main():
     print("------------------------------------")
     print("We will be trying to decode messages from Petey.")
 
-    # TODO: Open Files
-    fr=open("large_file-1.txt","r")
-
+    # Open Files
+    fread = open("large_file-1.txt","r")
+    fwrite = open("answer.txt", "w")
 
     for l in range(24):
-        # TODO: Read from file, decypt, and write files. 
-        
+        # Read from file, decypt, and write files. 
+        line = fread.readline()
+        fwrite.write("Whatever you like to write\n")
         decrypted_line = decrypt(line, 8)
-        
-    # TODO: Close Files
+        fwrite.write(decrypted_line)
+
+    # Close Files
+    fread.close()
+    fwrite.close()
 
 
     print("----------------------------")
