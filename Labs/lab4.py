@@ -1,4 +1,5 @@
 # Yvonne Aime
+# COP2500C
 # Lab 4 - Challenge 3
 # Petey Message Decoder
 
@@ -29,7 +30,6 @@ def main():
     for l in range(24):
         # Read from file, decypt, and write files. 
         line = fread.readline()
-        fwrite.write("Whatever you like to write\n")
         decrypted_line = decrypt(line, 8)
         fwrite.write(decrypted_line)
 
@@ -40,7 +40,5 @@ def main():
 
     print("----------------------------")
     print("Done")
-
-
 
 main()

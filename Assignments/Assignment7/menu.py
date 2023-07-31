@@ -12,11 +12,13 @@ def get_menu(filename):
     numbered = int(open_file.readline())
     for i in range(numbered):
         food_items = ()
+    open_file.close()
     return menu_items
 
+
 def print_receipt(total):
-    new_file = open("receipt.txt","w+")
-    new_file.write("Receipt:\n")
+    new_file = open("receipt.txt","w")
+    print("Receipt\n")
 
 def main():
     
